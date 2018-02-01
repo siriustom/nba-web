@@ -26,6 +26,9 @@ export class SearchBar extends React.Component {
     }
 
     render() {
+
+        window.nba = nba;//for debug
+
         const { dataSource } = this.state;
         const options = dataSource.map((player) => (
             <Option key={player.fullName} value={player.fullName} className="player-option">
