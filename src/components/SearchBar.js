@@ -22,12 +22,10 @@ export class SearchBar extends React.Component {
     }
 
     onSelect = (name) => {
-        this.props.handleSelectPlayer(name)
+        this.props.handleSelectPlayer(name);
     }
 
     render() {
-
-        window.nba = nba;//for debug
 
         const { dataSource } = this.state;
         const options = dataSource.map((player) => (

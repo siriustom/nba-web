@@ -11,6 +11,7 @@ export class Main extends React.Component {
     }
 
     componentDidMount() {
+        window.nba = nba;//for debug
         this.loadPlayerInfo('Stephen Curry');
     }
 
